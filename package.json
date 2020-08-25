@@ -1,0 +1,33 @@
+{
+  "name": "@cmdotcom/text-actions",
+  "version": "1.0.0",
+  "description": "Send SMS, Viber, WhatsApp on your Github Actions",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmdotcom/text-actions.git"
+  },
+  "keywords": [
+    "github",
+    "actions",
+    "cm.com",
+    "cm"
+  ],
+  "author": "Eric Smekens <eric.smekens@cmtelecom.com> (https://cm.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cmdotcom/text-actions/issues"
+  },
+  "homepage": "https://github.com/cmdotcom/text-actions#readme",
+  "dependencies": {
+    "@actions/core": "~1.2.4",
+    "@cmdotcom/text-sdk": "~1.3.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.2"
+  }
+}

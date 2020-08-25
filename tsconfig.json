@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "outDir": "./dist",
+      "target": "es2018",
+      "strict": false,
+      "strictNullChecks": false,
+      "alwaysStrict": false,
+      "moduleResolution": "node"
+    },
+    "include": [
+      "./src/**/*"
+    ]
+  }
+  

@@ -1,0 +1,25 @@
+name: 'CM.com Messaging'
+author: 'CM.com'
+description: 'Send SMS, Viber, WhatsApp on your Github Actions'
+inputs:
+  from:
+    description: 'Phone number you want to send the message from'
+    required: true
+  to:
+    description: 'Phone number to send the message to'
+    required: true
+  message:
+    description: 'The message you want to send'
+    required: true
+  CM_PRODUCT_TOKEN:
+    description: 'A CM.com producttoken. Can alternatively be stored in environment'
+    required: true
+outputs:
+  reference:
+    description: 'The reference of the created message'
+runs:
+  using: 'node12'
+  main: 'dist/main.js'
+branding:
+  color: 'blue'
+  icon: 'message-square'
