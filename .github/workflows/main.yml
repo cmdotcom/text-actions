@@ -1,0 +1,28 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  message_job:
+    runs-on: ubuntu-latest
+    name: CM Message
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: CM message step
+        uses: ./
+        id: hello
+        with:
+          from: 'CM.com'
+          to: '003160123456789'
+          message: 'Something changed on master branch'
+          CM_PRODUCT_TOKEN: ${{ secrets.CM_PRODUCT_TOKEN }}
+      
