@@ -5,10 +5,6 @@ name: CI
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
 on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
   issues:
     types: [opened]
 
@@ -24,7 +20,7 @@ jobs:
         id: hello
         with:
           from: 'CM.com'
-          to: '003160123456789'
-          message: 'Something changed on master branch'
+          to: '0031650418237'
+          message: 'An issue for was opened for text-actions'
           CM_PRODUCT_TOKEN: ${{ secrets.CM_PRODUCT_TOKEN }}
       
