@@ -20,7 +20,7 @@ jobs:
         id: hello
         with:
           from: 'CM.com'
-          to: '0031650418237'
+          to: '0031765727000'
           message: 'An issue for was opened for text-actions'
           CM_PRODUCT_TOKEN: ${{ secrets.CM_PRODUCT_TOKEN }}
       
